@@ -1,0 +1,956 @@
+﻿<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+
+  		<script type="text/javascript">
+			window.flatStyles = window.flatStyles || ''
+
+			window.lightspeedOptimizeStylesheet = function () {
+				const currentStylesheet = document.querySelector( '.tcb-lightspeed-style:not([data-ls-optimized])' )
+
+				if ( currentStylesheet ) {
+					try {
+						if ( currentStylesheet.sheet && currentStylesheet.sheet.cssRules ) {
+							if ( window.flatStyles ) {
+								if ( this.optimizing ) {
+									setTimeout( window.lightspeedOptimizeStylesheet.bind( this ), 24 )
+								} else {
+									this.optimizing = true;
+
+									let rulesIndex = 0;
+
+									while ( rulesIndex < currentStylesheet.sheet.cssRules.length ) {
+										const rule = currentStylesheet.sheet.cssRules[ rulesIndex ]
+										/* remove rules that already exist in the page */
+										if ( rule.type === CSSRule.STYLE_RULE && window.flatStyles.includes( `${rule.selectorText}{` ) ) {
+											currentStylesheet.sheet.deleteRule( rulesIndex )
+										} else {
+											rulesIndex ++
+										}
+									}
+									/* optimize, mark it such, move to the next file, append the styles we have until now */
+									currentStylesheet.setAttribute( 'data-ls-optimized', '1' )
+
+									window.flatStyles += currentStylesheet.innerHTML
+
+									this.optimizing = false
+								}
+							} else {
+								window.flatStyles = currentStylesheet.innerHTML
+								currentStylesheet.setAttribute( 'data-ls-optimized', '1' )
+							}
+						}
+					} catch ( error ) {
+						console.warn( error )
+					}
+
+					if ( currentStylesheet.parentElement.tagName !== 'HEAD' ) {
+						/* always make sure that those styles end up in the head */
+						const stylesheetID = currentStylesheet.id;
+						/**
+						 * make sure that there is only one copy of the css
+						 * e.g display CSS
+						 */
+						if ( ( ! stylesheetID || ( stylesheetID && ! document.querySelector( `head #${stylesheetID}` ) ) ) ) {
+							document.head.prepend( currentStylesheet )
+						} else {
+							currentStylesheet.remove();
+						}
+					}
+				}
+			}
+
+			window.lightspeedOptimizeFlat = function ( styleSheetElement ) {
+				if ( document.querySelectorAll( 'link[href*="thrive_flat.css"]' ).length > 1 ) {
+					/* disable this flat if we already have one */
+					styleSheetElement.setAttribute( 'disabled', true )
+				} else {
+					/* if this is the first one, make sure he's in head */
+					if ( styleSheetElement.parentElement.tagName !== 'HEAD' ) {
+						document.head.append( styleSheetElement )
+					}
+				}
+			}
+		</script>
+		<style type="text/css" id="tcb-style-base-custom_thrive_page-29727" onload="typeof window.lightspeedOptimizeStylesheet === 'function' && window.lightspeedOptimizeStylesheet()" class="tcb-lightspeed-style">.thrv-page-section{position:relative;box-sizing:border-box !important;}.thrv-page-section .tve-page-section-out{position:absolute;width:100%;height:100%;left:0px;top:0px;box-sizing:border-box;transition:box-shadow 0.5s ease 0s,-webkit-box-shadow 0.5s ease 0s;overflow:hidden;}.thrv-page-section .tve-page-section-in{box-sizing:border-box;margin-right:auto;margin-left:auto;position:relative;z-index:1;min-height:40px;}.tve-page-section-in > .thrv_wrapper:first-child{margin-top:0px;}.tve-page-section-in > .thrv_wrapper:last-child{margin-bottom:0px;}.thrv_wrapper .tve-content-box-background{position:absolute;width:100%;left:0px;top:0px;overflow:hidden;background-clip:padding-box;height:100% !important;}.thrv_wrapper.thrv-content-box{box-sizing:border-box;position:relative;min-height:10px;}.thrv_wrapper.thrv-content-box div:not(.thrv_icon):not(.ui-resizable-handle):not(.tve-auxiliary-icon-element){box-sizing:border-box;}.tve-cb{display:inline-block;vertical-align:middle;clear:both;overflow:visible;width:100%;z-index:1;position:relative;min-height:10px;}.thrv_responsive_video{width:100%;min-width:100px;}.thrv_responsive_video .tcb-video-float-container{transition:all 0.5s ease-out 0s,margin 0s ease 0s;}#tve_editor .thrv_responsive_video{box-sizing:border-box;}.tcb-icon{display:inline-block;width:1em;height:1em;line-height:1em;vertical-align:middle;stroke-width:0;stroke:currentcolor;fill:currentcolor;box-sizing:content-box;transform:rotate(var(--tcb-icon-rotation-angle,0deg));}symbol[id^="tcb-icon-"] path:not([fill="none"]){transition:none 0s ease 0s;fill:inherit !important;stroke:inherit !important;}.tve_image_caption{position:relative;}.tve_image_caption:not(.tcb-mm-image.tve-tab-image){height:auto !important;}.tve_image_caption .tve_image{max-width:100%;width:100%;}.thrv_text_element a:not(.tcb-button-link){font-size:inherit;}.tcb-style-wrap strong{font-weight:var(--g-bold-weight,bold);}.thrv_text_element{overflow-wrap:break-word;}.tve_js_placeholder{background:none !important;}html{text-rendering:auto !important;}html body{text-rendering:auto !important;}.thrv_wrapper{margin-top:20px;margin-bottom:20px;padding:1px;}.thrv_wrapper div{box-sizing:content-box;}.thrv_wrapper.tve-elem-default-pad{padding:20px;}.thrv_wrapper.thrv_text_element,.thrv_wrapper.thrv-page-section{margin:0px;}p{font-size:1em;}.tve_image{border-radius:0px;box-shadow:none;}div .tve_image_caption{padding:0px;max-width:100% !important;box-sizing:border-box !important;}.tve_image_caption .tve_image_frame{display:block;max-width:100%;position:relative;overflow:hidden;}.tve_image_caption .tve_image{display:block;padding:0px;height:auto;}.tve_responsive_video_container{position:relative;height:0px;overflow:hidden;padding-bottom:56.25%;display:block;}.tve_responsive_video_container iframe{position:absolute;top:0px;left:0px;width:100% !important;height:100% !important;}.tve_responsive_video_container .top-left{cursor:pointer;top:50px;left:50px;z-index:99999;position:fixed !important;}.thrv_responsive_video.thrv_wrapper{max-height:100%;max-width:100%;margin-left:auto;margin-right:auto;}.video_overlay{cursor:pointer;}.tvd-toast{-webkit-box-pack:justify;justify-content:space-between;}.tvd-toast.tve-fe-message{top:50px;width:60%;padding:0px;color:rgb(0,0,0);max-width:500px;position:fixed;z-index:9999993;left:50%;}.tvd-toast.tve-fe-message .tve-toast-message{position:relative;left:-50%;background:rgb(255,255,255);box-shadow:rgb(167,167,167) 0px 0px 15px 0px;}.tvd-toast.tve-fe-message .tve-toast-icon-container{display:inline-block;width:50px;background:green;color:rgb(255,255,255);height:100%;position:absolute;}.tvd-toast.tve-fe-message .tve-toast-message-container{padding:20px 10px 20px 70px;margin:auto 0px;font-family:Roboto,sans-serif;font-size:16px;}.tvd-toast.tve-fe-message span{text-align:center;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-align:center;align-items:center;min-height:50px;height:100%;width:100%;}.thrv_wrapper.thrv_contentbox_shortcode{position:relative;}@media (max-width:767px){html{overflow-x:hidden !important;}html,body{max-width:100vw !important;}}@media screen and (max-device-width:480px){body{text-size-adjust:none;}}@media only screen and (max-device-width:1366px){.thrv_responsive_video.thrv_wrapper:not(.tcb-no-perspective){transform:translateZ(0px);}}</style><meta name='robots' content='noindex, nofollow'>
+<!-- Google tag (gtag.js) Consent Mode dataLayer added by Site Kit -->
+<script id='google_gtagjs-js-consent-mode-data-layer'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500});
+window._googlesitekitConsentCategoryMap = {"statistics":["analytics_storage"],"marketing":["ad_storage","ad_user_data","ad_personalization"],"functional":["functionality_storage","security_storage"],"preferences":["personalization_storage"]};
+window._googlesitekitConsents = {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500}</script>
+<!-- End Google tag (gtag.js) Consent Mode dataLayer added by Site Kit -->
+			
+	<!-- This site is optimized with the Yoast SEO plugin v23.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Jack Canfield’s Success TV – TAS 56 - Jack Canfield</title>
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Jack Canfield’s Success TV – TAS 56 - Jack Canfield">
+	<meta property="og:description" content="Episode 56: &nbsp;Deepali Vyas and Mike Grushin Learn from the founders of Fearless+, an Education Technology platform that empowers the next generation by focusing on the professional and life skills that are NOT taught in school.&nbsp;&gt; Talking About Success home&nbsp; Your Progress Subscribe below for Success TV updates and Jack&#039;s weekly newsletter: By checking this [&hellip;]">
+	<meta property="og:url" content="https://jackcanfield.com/pages/success-tv-talking-about-success-56/">
+	<meta property="og:site_name" content="Jack Canfield">
+	<meta property="article:modified_time" content="2022-03-08T21:41:32+00:00">
+	<meta property="og:image" content="https://jackcanfield.com/wp-content/uploads/2020/02/Roku-Channel-Logo-400x90-1.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="1 minute">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://jackcanfield.com/pages/success-tv-talking-about-success-56/","url":"https://jackcanfield.com/pages/success-tv-talking-about-success-56/","name":"Jack Canfield’s Success TV – TAS 56 - Jack Canfield","isPartOf":{"@id":"https://jackcanfield.com/#website"},"primaryImageOfPage":{"@id":"https://jackcanfield.com/pages/success-tv-talking-about-success-56/#primaryimage"},"image":{"@id":"https://jackcanfield.com/pages/success-tv-talking-about-success-56/#primaryimage"},"thumbnailUrl":"https://jackcanfield.com/wp-content/uploads/2020/02/Roku-Channel-Logo-400x90-1.png","datePublished":"2022-03-03T22:50:46+00:00","dateModified":"2022-03-08T21:41:32+00:00","breadcrumb":{"@id":"https://jackcanfield.com/pages/success-tv-talking-about-success-56/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://jackcanfield.com/pages/success-tv-talking-about-success-56/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://jackcanfield.com/pages/success-tv-talking-about-success-56/#primaryimage","url":"https://webserver-assets-jackcanfield.s3.amazonaws.com/wp-content/uploads/2020/02/Roku-Channel-Logo-400x90-1.png","contentUrl":"https://webserver-assets-jackcanfield.s3.amazonaws.com/wp-content/uploads/2020/02/Roku-Channel-Logo-400x90-1.png","width":400,"height":90},{"@type":"BreadcrumbList","@id":"https://jackcanfield.com/pages/success-tv-talking-about-success-56/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jackcanfield.com/"},{"@type":"ListItem","position":2,"name":"Jack Canfield’s Success TV – TAS 56"}]},{"@type":"WebSite","@id":"https://jackcanfield.com/#website","url":"https://jackcanfield.com/","name":"Jack Canfield","description":"America&#039;s Authority On Success And Personal Fulfillment","publisher":{"@id":"https://jackcanfield.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://jackcanfield.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://jackcanfield.com/#organization","name":"Jack Canfield","url":"https://jackcanfield.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://jackcanfield.com/#/schema/logo/image/","url":"https://jackcanfield.com/wp-content/uploads/2019/02/logo-jackcanfield.png","contentUrl":"https://jackcanfield.com/wp-content/uploads/2019/02/logo-jackcanfield.png","width":295,"height":58,"caption":"Jack Canfield"},"image":{"@id":"https://jackcanfield.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com'>
+<link rel='dns-prefetch' href='//a.omappapi.com'>
+<link rel='dns-prefetch' href='//www.googletagmanager.com'>
+<link rel='dns-prefetch' href='//fonts.googleapis.com'>
+<link rel='dns-prefetch' href='//use.fontawesome.com'>
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com'>
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/jackcanfield.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='cf-frontend-style-inline-css' type='text/css'>
+@font-face {
+	font-family: 'VisbyCF-Regular';
+	font-weight: 400;
+	font-display: auto;
+	font-fallback: Arial;
+	src: url('../../wp-content/uploads/2021/04/VisbyCF-Regular.woff2') format('woff2'),
+		url('../../wp-content/uploads/2021/04/VisbyCF-Regular.woff') format('woff'),
+		url('../../wp-content/uploads/2021/04/VisbyCF-Regular.eot') format('embedded-opentype');
+}
+@font-face {
+	font-family: 'VisbyCF-Light';
+	font-weight: 400;
+	font-display: auto;
+	font-fallback: Arial;
+	src: url('../../wp-content/uploads/2021/04/VisbyCF-Light.woff2') format('woff2'),
+		url('../../wp-content/uploads/2021/04/VisbyCF-Light.woff') format('woff'),
+		url('../../wp-content/uploads/2021/04/VisbyCF-Light.eot') format('embedded-opentype');
+}
+@font-face {
+	font-family: 'VisbyCF-Light';
+	font-weight: 400;
+	font-display: auto;
+	font-fallback: Arial;
+}
+@font-face {
+	font-family: 'VisbyCF-Heavy.';
+	font-weight: 400;
+	font-display: auto;
+	font-fallback: Arial;
+	src: url('../../wp-content/uploads/2021/04/VisbyCF-Heavy.woff2') format('woff2'),
+		url('../../wp-content/uploads/2021/04/VisbyCF-Heavy.woff') format('woff'),
+		url('../../wp-content/uploads/2021/04/VisbyCF-Heavy.eot') format('embedded-opentype');
+}
+@font-face {
+	font-family: 'VisbyCF-Bold';
+	font-weight: 400;
+	font-display: auto;
+	font-fallback: Arial;
+	src: url('../../wp-content/uploads/2021/04/VisbyCF-Bold.woff2') format('woff2'),
+		url('../../wp-content/uploads/2021/04/VisbyCF-Bold.woff') format('woff'),
+		url('../../wp-content/uploads/2021/04/VisbyCF-Bold.eot') format('embedded-opentype');
+}
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all'>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='jc-style-css' href='../../wp-content/themes/jackcanfield/assets/css/global/global-styles.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='jc-theme-style-css' href='../../wp-content/themes/jackcanfield/assets/css/theme/theme-styles.min.css' type='text/css' media='all'>
+<link rel='stylesheet' id='google-fonts-css' href='../../css-3?family=Montserrat%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C800%2C800i%7COpen+Sans%3A400%2C700%7COswald%3A200%2C300%2C400%7CLato%3A700' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-css' href='../../releases/v5.7.1/css/all.css' type='text/css' media='all'>
+<link rel='stylesheet' id='hm_custom_css-css' href='../../wp-content/uploads/hm_custom_css_js/custom.css' type='text/css' media='all'>
+<script type="text/javascript" src="../../wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/masonry.min.js" id="masonry-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/jquery/jquery.masonry.min.js" id="jquery-masonry-js"></script>
+<script type="text/javascript" id="tve_frontend-js-extra">
+/* <![CDATA[ */
+var tve_frontend_options = {"ajaxurl":"https:\/\/jackcanfield.com\/wp-admin\/admin-ajax.php","is_editor_page":"","page_events":[],"is_single":"1","social_fb_app_id":"","dash_url":"https:\/\/jackcanfield.com\/wp-content\/plugins\/thrive-visual-editor\/thrive-dashboard","queried_object":{"ID":29727,"post_author":"12"},"query_vars":{"page":"","custom_thrive_page":"success-tv-talking-about-success-56","post_type":"custom_thrive_page","name":"success-tv-talking-about-success-56"},"$_POST":[],"translations":{"Copy":"Copy","empty_username":"ERROR: The username field is empty.","empty_password":"ERROR: The password field is empty.","empty_login":"ERROR: Enter a username or email address.","min_chars":"At least %s characters are needed","no_headings":"No headings found","registration_err":{"required_field":"<strong>Error<\/strong>: This field is required","required_email":"<strong>Error<\/strong>: Please type your email address.","invalid_email":"<strong>Error<\/strong>: The email address isn&#8217;t correct.","passwordmismatch":"<strong>Error<\/strong>: Password mismatch"}},"routes":{"posts":"https:\/\/jackcanfield.com\/wp-json\/tcb\/v1\/posts","video_reporting":"https:\/\/jackcanfield.com\/wp-json\/tcb\/v1\/video-reporting"},"nonce":"6d36fe20e2","allow_video_src":"","google_client_id":null,"google_api_key":null,"facebook_app_id":null,"lead_generation_custom_tag_apis":["activecampaign","aweber","convertkit","drip","klicktipp","mailchimp","sendlane","zapier"],"post_request_data":[],"user_profile_nonce":"dfb4580ed5","ip":"102.135.169.205","current_user":[],"post_id":"29727","post_title":"Jack Canfield\u2019s Success TV \u2013 TAS 56","post_type":"custom_thrive_page","post_url":"https:\/\/jackcanfield.com\/pages\/success-tv-talking-about-success-56\/","is_lp":"","conditional_display":{"is_tooltip_dismissed":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/general.min.js" id="tve_frontend-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script type="text/javascript" src="../../gtag/js-2?id=GT-WPTKLPB" id="google_gtagjs-js" async=""></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["jackcanfield.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-WPTKLPB");
+/* ]]> */
+</script>
+
+<!-- End Google tag (gtag.js) snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://jackcanfield.com/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jackcanfield.com/xmlrpc.php?rsd">
+<link rel='shortlink' href='https://jackcanfield.com/?p=29727'>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://jackcanfield.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjackcanfield.com%2Fpages%2Fsuccess-tv-talking-about-success-56%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://jackcanfield.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjackcanfield.com%2Fpages%2Fsuccess-tv-talking-about-success-56%2F&format=xml">
+<script type="text/javascript">var ajaxurl = "https://jackcanfield.com/wp-admin/admin-ajax.php";</script><meta name="generator" content="Site Kit by Google 1.139.0"><style type="text/css" id="tve_global_variables">:root{--tcb-color-0:rgb(35, 137, 205);--tcb-color-0-h:204;--tcb-color-0-s:70%;--tcb-color-0-l:47%;--tcb-color-0-a:1;--tcb-color-1:rgb(247, 147, 30);--tcb-color-1-h:32;--tcb-color-1-s:93%;--tcb-color-1-l:54%;--tcb-color-1-a:1;--tcb-color-2:rgb(255, 255, 255);--tcb-color-2-h:0;--tcb-color-2-s:0%;--tcb-color-2-l:100%;--tcb-color-2-a:1;--tcb-color-3:rgb(252, 0, 0);--tcb-color-3-h:0;--tcb-color-3-s:100%;--tcb-color-3-l:49%;--tcb-color-3-a:1;--tcb-color-4:rgb(25, 73, 117);--tcb-color-4-h:208;--tcb-color-4-s:64%;--tcb-color-4-l:27%;--tcb-color-4-a:1;--tcb-color-5:rgb(0, 0, 0);--tcb-color-5-h:0;--tcb-color-5-s:0%;--tcb-color-5-l:0%;--tcb-color-5-a:1;--tcb-gradient-0:linear-gradient(180deg, #ffffff 0%, #000000 100%);--tcb-gradient-1:linear-gradient(43deg, rgb(253, 182, 69) 0%, rgb(255, 127, 87) 100%);--tcb-gradient-2:linear-gradient(45deg, var(--tcb-local-color-af076) 38%, var(--tcb-local-color-25d4d) 100%);--tcb-background-author-image:url(https://secure.gravatar.com/avatar/599690ebbd8640c0cf79a67b2c98843f?s=256&d=mm&r=g);--tcb-background-user-image:url();--tcb-background-featured-image-thumbnail:url(../../wp-content/plugins/thrive-visual-editor/editor/css/images/featured_image.png);}</style><script type="text/javascript">var ajaxurl = "https://jackcanfield.com/wp-admin/admin-ajax.php"</script>
+<!-- Google AdSense meta tags added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense meta tags added by Site Kit -->
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><script id='nitro-telemetry-meta' nitro-exclude="">window.NPTelemetryMetadata={missReason: (!window.NITROPACK_STATE ? 'url not allowed' : 'hit'),pageType: 'custom_thrive_page',isEligibleForOptimization: false,}</script><script id='nitro-generic' nitro-exclude="">(()=>{window.NitroPack=window.NitroPack||{coreVersion:"na",isCounted:!1};let e=document.createElement("script");if(e.src="https://nitroscripts.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ",e.async=!0,e.id="nitro-script",document.head.appendChild(e),!window.NitroPack.isCounted){window.NitroPack.isCounted=!0;let t=()=>{navigator.sendBeacon("https://to.getnitropack.com/p",JSON.stringify({siteId:"qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ",url:window.location.href,isOptimized:!!window.IS_NITROPACK,coreVersion:"na",missReason:window.NPTelemetryMetadata?.missReason||"",pageType:window.NPTelemetryMetadata?.pageType||"",isEligibleForOptimization:!!window.NPTelemetryMetadata?.isEligibleForOptimization}))};(()=>{let e=()=>new Promise(e=>{"complete"===document.readyState?e():window.addEventListener("load",e)}),i=()=>new Promise(e=>{document.prerendering?document.addEventListener("prerenderingchange",e,{once:!0}):e()}),a=async()=>{await i(),await e(),t()};a()})(),window.addEventListener("pageshow",e=>{if(e.persisted){let i=document.prerendering||self.performance?.getEntriesByType?.("navigation")[0]?.activationStart>0;"visible"!==document.visibilityState||i||t()}})}})();</script>
+<!-- Google AdSense snippet added by Site Kit -->
+<script type="text/javascript" async="async" src="../../pagead/js/f.txt?client=ca-pub-8325148640357770&amp;host=ca-host-pub-2644536267352236" crossorigin="anonymous"></script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+
+<!-- Google Tag Manager snippet added by Site Kit -->
+<script type="text/javascript">
+/* <![CDATA[ */
+
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-M3S6XFB' );
+			
+/* ]]> */
+</script>
+
+<!-- End Google Tag Manager snippet added by Site Kit -->
+<style type="text/css" id="thrive-default-styles"></style>			<style class="tve_custom_style">@media (min-width: 300px){[data-css="tve-u-17064941339"]{width: 400px;float: none;margin-left: auto !important;margin-right: auto !important;}[data-css="tve-u-170649499a5"]{background-image: url("../../webserver-assets-jackcanfield/wp-content/uploads/2020/02/stv-background.png") !important;background-size: cover !important;background-position: 50% 5% !important;background-attachment: scroll !important;background-repeat: no-repeat !important;}[data-css="tve-u-1706494e31c"]{border-bottom: 10px solid rgb(52,5,115);padding-top: 25px !important;padding-bottom: 25px !important;}[data-css="tve-u-17064966fe5"]{max-width: 985px;}[data-css="tve-u-170a907a8ff"]{margin-top: 20px !important;}[data-css="tve-u-170ab82758c"]{margin-top: 0px !important;margin-bottom: 0px !important;padding-bottom: 0px !important;padding-top: 10px !important;}}</style> 					<style type="text/css" id="wp-custom-css">
+			.main-navigation ul {
+    padding: 0;
+    margin: -4px;
+    list-style: none;
+}
+.site-header .main-navigation .primary-menu {
+    flex: 7;
+    margin-left: 1rem;
+}
+body,input{color:#333333;font-family:Montserrat,sans-serif}
+		</style>
+		<meta name='generator' content='Memberium v3.05 for WordPress'>
+<!-- no file --><style type='text/css' data-critical='default.critical.css'>html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}img{border-style:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.container{margin:0 auto;width:100%;max-width:1080px}.container:after{content:"";display:block;clear:both}@media (max-width:1100px){.container{padding:0 1rem}}body{color:#333333;font-family:Montserrat,sans-serif}h2,h3{line-height:1.4;margin:1rem 0;font-weight:600;color:#155584}h2:first-child{margin-top:0}h2{font-size:1.6rem}@media (max-width:580px){h2{font-size:1.3rem}}h3{font-size:1.35rem}@media (max-width:580px){h3{font-size:1.2rem}}p{margin:0;margin-bottom:1.25rem}html{box-sizing:border-box;font-size:17px;line-height:1.8;font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:-.25px;scroll-behavior:smooth}@media (max-width:1100px){html{letter-spacing:0}}@media (max-width:580px){html{font-size:14px;line-height:1.5}}*,:after,:before{box-sizing:inherit}ol,ul{margin:1rem 0;padding:0;padding-left:2rem}ul ul{margin:0}ul:last-child{margin-bottom:0}ul{list-style:disc}ol{list-style:decimal}ol,ul{margin:0 0 2rem}ol>li,ul>li{padding-left:.5rem;box-sizing:border-box}ol>li:last-child,ul>li:last-child{margin-bottom:0}ul>li>ul{margin-top:.5rem}img{height:auto;max-width:100%;vertical-align:middle}a{color:#00cbee}.main-navigation{clear:both;display:flex;align-items:center}.main-navigation:after{content:"";display:block;clear:both}.main-navigation ul{padding:0;margin:auto;list-style:none}.main-navigation li.menu-item{display:inline-block;padding:0;margin-left:5px;position:relative}.main-navigation li.menu-item>.sub-menu>li:first-child>.sub-menu{border-radius:0 0 8px 8px}.main-navigation li.menu-item>.sub-menu>li>.sub-menu{border-radius:8px}.main-navigation li.menu-item a{display:block;text-decoration:none}.main-navigation .sub-menu{display:none;position:absolute;top:100%;left:-999rem;z-index:99;background:#fff;width:300px}.main-navigation .sub-menu li.menu-item{display:block}.main-navigation .sub-menu li.menu-item a{min-width:200px;position:relative}.main-navigation .sub-menu li .sub-menu{left:107%!important;top:0}.main-navigation .sub-menu li .sub-menu:before{content:"";left:-21px;top:0;width:21px;height:50px;background:transparent url(../../assets/wp/submenu-caret.png) no-repeat scroll 0 0/100% auto;display:block;position:absolute;background-position:5px}@media (max-width:1115px){.main-navigation{position:fixed!important;top:0;bottom:0;left:100%;right:0;background:#fff;z-index:999999;width:100%;display:flex;flex-direction:column;justify-content:center;text-align:center}.main-navigation .menu .menu-item{display:block;text-align:center;margin:auto}.main-navigation .primary-menu .menu .menu-item{text-align:left}}.mobile-menu-toggle{display:none;float:right;color:#155584}@media (max-width:1115px){.mobile-menu-toggle{display:block}}.mobile-menu-toggle span{width:20px;height:3px;background:#155584;display:block;margin:4px 0}.trainings-category>a{position:relative}.entry-content:after:after,.entry-content:before:after,.site-content:after:after,.site-content:before:after,.site-header:after:after,.site-header:before:after{content:"";display:block;clear:both}.custom-logo-link{display:inline-block}.site-header{box-shadow:inset 0 -1px #cacaca;background-color:#fff;position:fixed;right:0;left:0;top:0;z-index:3}.site-header .container{max-width:1570px;padding:0 15px}@media screen and (max-width:1570px){.site-header .container{padding:0 65px}}@media screen and (max-width:1115px){.site-header .container{padding:0 15px}}.site-header .site-logo{max-width:200px}@media (max-width:580px){.site-header .site-logo{margin:auto}}.site-header__wrapper{display:flex;justify-content:space-between;align-items:center}.site-header .main-navigation{font-weight:600;justify-content:space-between;align-items:center;flex:1;position:relative}.site-header .main-navigation .primary-menu{flex:1;margin-left:2rem}.site-header .main-navigation .primary-login{width:33%}.site-header .main-navigation .primary-login #menu-primary-login{float:right}@media screen and (max-width:1115px){.site-header .main-navigation .primary-login #menu-primary-login{float:none}}.site-header .main-navigation .menu-item a{padding:1.5rem .5rem;border-bottom:3px solid transparent;color:#155584;font-size:14px;line-height:1.2}.site-header .main-navigation .menu-item.featured>a{padding:.5rem 2.5rem;border-radius:30px;border:3px solid #00cbee}.site-header .main-navigation .sub-menu{box-shadow:0 5px 5px rgba(0,0,0,.1)}.site-header .main-navigation .sub-menu .menu-item{margin:0}.site-header .main-navigation .sub-menu .menu-item a{padding:1rem 2.4rem;font-size:.9rem;position:relative}.site-header .main-navigation .sub-menu .menu-item-has-children>a:before{content:"\f054";color:#89e7f7;font-family:Font Awesome\ 5 Free;right:20px;position:absolute}.site-header .main-navigation .sub-menu .menu-item-has-children>a:after{content:none!important}@media (max-width:1100px){.site-header .site-logo{max-width:150px}.site-header .main-navigation .menu-item a{font-size:14px;padding:1rem .6rem}}@media (max-width:1115px){.site-header{padding:.5rem 0}.site-header .main-navigation .primary-menu{margin:0;width:100%}.site-header .main-navigation .primary-menu ul li.menu-item-has-children>a{position:relative;z-index:1}.site-header .main-navigation .primary-menu ul.sub-menu li>a{font-size:16px}.site-header .main-navigation .menu-item a{font-size:16px;padding:1.2rem 1rem}}@media (max-width:1115px){.site-header .main-navigation .menu-item.featured{display:inline-block;padding:0}}.page-template-default .entry-content,.page .entry-content{margin:3rem auto;max-width:960px}@media (max-width:580px){.page-template-default .entry-content,.page .entry-content{margin:1rem auto}}.page-template-default .entry-content ol>li,.page .entry-content ol>li{margin-bottom:.5rem}.page-template-default .entry-content ol>li:before,.page .entry-content ol>li:before{content:"";display:block;position:absolute;box-sizing:border-box;right:100%;color:#00cbee}.page-template-default .entry-content ol,.page .entry-content ol{counter-reset:a}.page-template-default .entry-content ol>li:before,.page .entry-content ol>li:before{content:counter(a);counter-increment:a;padding-right:.5rem;text-align:right;font-weight:700}.page-template-default .entry-header__img,.page .entry-header__img{margin:3rem auto}</style>	<script>
+var head = document.head;
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "https://191466.t.hyros.com/v1/lst/universal-script?ph=0645c559dc298131c583ff8326e5554e0288727af13dd38e93054ef5adfd5119&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
+head.appendChild(script);
+</script>
+</head>
+
+<body class="custom_thrive_page-template-default single single-custom_thrive_page postid-29727 wp-custom-logo">
+  <div id="page" class="site">
+      <header id="masthead" class="site-header">
+      <div class="container">
+        <div class="site-header__wrapper">
+          <div class="site-logo">
+            <a href="../../index.htm" class="custom-logo-link" rel="home"><img width="295" height="58" src="../../wp-content/uploads/2019/02/logo-jackcanfield.png" class="custom-logo" alt="Jack Canfield Clear Logo" decoding="async"></a>          </div>
+          <div id="mobile-menu-toggle" class="mobile-menu-toggle"><span></span><span></span><span></span></div>
+          <nav id="site-navigation" class="main-navigation">
+            <!--<div id="mobile-menu-close" class="mobile-menu-close"><i class="fas fa-lg fa-fw fa-times"></i></div>-->
+            <div class="primary-menu"><ul id="menu-primary-menu" class="menu"><li id="menu-item-2233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2233"><a href="../../about-jack-canfield/index.htm">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-2234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2234"><a href="../../about-jack-canfield/meet-the-team/index.htm">Meet the Team</a></li>
+	<li id="menu-item-2235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2235"><a href="../../about-jack-canfield/trainer-directory/index.htm">Trainer Directory</a></li>
+	<li id="menu-item-2236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2236"><a href="../../about-jack-canfield/reviews/index.htm">Reviews</a></li>
+	<li id="menu-item-2254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2254"><a href="../../about-jack-canfield/contact-us/index.htm">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-2237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2237"><a href="../../coaching/index.htm">Coaching</a></li>
+<li id="menu-item-2249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2249"><a href="../../hire-jack/index.htm">Hire Jack</a></li>
+<li id="menu-item-32317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32317"><a href="../../trainings/index.htm">Trainings</a></li>
+<li id="menu-item-2251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251"><a href="../../store/index.htm">Store</a></li>
+<li id="menu-item-2403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2403"><a href="../../success-resources/index.htm">Resources</a></li>
+</ul></div><div class="primary-login"><ul id="menu-primary-login" class="menu"><li id="menu-item-1809" class="featured menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1809"><a href="../../blog/index.htm">Blog</a></li>
+<li id="menu-item-1814" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1814"><a target="_blank" rel="noopener" href="https://members.jackcanfield.com/">Login</a></li>
+</ul></div>
+          </nav><!-- #site-navigation -->
+        </div>
+      </div>
+		<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '307001972782646'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" src="facebook.com/tr?id=307001972782646&ev=PageView
+&noscript=1">
+</noscript>
+<!-- End Meta Pixel Code -->
+    </header><!-- #masthead -->
+    
+    <div id="content" class="site-content">
+      
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+			<div id="tve_flt" class="tve_flt tcb-style-wrap"><div id="tve_editor" class="tve_shortcode_editor tar-main-content" data-post-id="29727"><div class="thrv_wrapper thrv-page-section" data-inherit-lp-settings="1" style="margin-top: 0px !important;" data-css="tve-u-1706494e31c">
+	<div class="tve-page-section-out" data-css="tve-u-170649499a5" style=""></div>
+	<div class="tve-page-section-in tve_empty_dropzone" data-css="tve-u-17064e7356d"><div class="thrv_wrapper tve_image_caption" data-css="tve-u-17064941339"><span class="tve_image_frame"><img decoding="async" class="tve_image wp-image-21824" alt="" data-id="21824" width="400" height="90" title="Roku Channel Logo 400x90 (1)" src="../../webserver-assets-jackcanfield/wp-content/uploads/2020/02/Roku-Channel-Logo-400x90-1.png"></span></div></div>
+</div><div class="thrv_wrapper thrv-page-section" data-inherit-lp-settings="1">
+	<div class="tve-page-section-out"></div>
+	<div class="tve-page-section-in tve_empty_dropzone" data-css="tve-u-17064966fe5" style=""><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box tve-elem-default-pad" style="" data-css="tve-u-170a907a8ff">
+	<div class="tve-content-box-background"></div>
+	<div class="tve-cb"><div class="thrv_responsive_video thrv_wrapper" data-aspect-ratio="16:9" data-rel="0" data-float="false" data-float-visibility="mobile" data-overlay="0" data-type="vimeo" data-modestbranding="0" data-aspect-ratio-default="0" data-url="https://vimeo.com/684431822" style="" data-css="tve-u-17c71de9faa" data-float-position="top-left" data-float-width-d="300px" data-float-padding1-d="25px" data-float-padding2-d="25px">
+	
+
+	<div class="tve_responsive_video_container" style="padding-bottom: 56.25%;">
+		<div class="tcb-video-float-container"><div class="video_overlay"></div><iframe title="Responsive Video" class="tcb-responsive-video" data-code="684431822" data-hash="undefined" data-provider="vimeo" frameborder="0" allowfullscreen="" data-src="https://player.vimeo.com/video/684431822?portrait=0&amp;title=1&amp;color=fff&amp;byline=1&amp;autopause=0"></iframe></div>
+	</div>
+</div><div class="thrv_wrapper thrv_text_element"><p><strong>Episode 56: &nbsp;</strong>Deepali Vyas and Mike Grushin <br>Learn from the founders of Fearless+, an Education Technology platform that empowers the next generation by focusing on the professional and life skills that are NOT taught in school.</p><p><span data-sheets-userformat="{&quot;2&quot;:11197,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;16&quot;:11}" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Mark is an accomplished scientist who has developed a systematic approach to intentionally manifest success through the Universal Law of Creation. Now he wants to share his system with you. &quot;}"><a class="tve-froala fr-basic" href="../success-tv-talking-about-success/index.htm" rel="nofollow" style="outline: none;">&gt; Talking About Success home&nbsp;</a></span></p></div></div>
+</div><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box tve-elem-default-pad" style="" data-css="tve-u-170ab82758c">
+	<div class="tve-content-box-background"></div>
+	<div class="tve-cb"><div class="thrv_wrapper thrv_custom_html_shortcode"><style>
+/*
+Newsletter Additions and Popup form
+*/
+
+.newsletter-optin .after-post ul li, .archive-page ul li, .entry-content ul li.green-checks {
+  background: url(https://media-jackcanfield.s3.amazonaws.com/assets/images/success/op/success-strategies-newsletter/green-check-circle.png) no-repeat;
+  list-style-type: none;
+  margin: 0 0 15px 20px;
+  padding: 0 0 0 40px;
+  word-wrap: break-word;
+  background-position: 0px 3px;
+}
+
+.ja-content-main .optin-box-success {
+  background-color: #691eaf;
+  color: #fff;
+  padding: 2rem 3rem;
+  box-shadow: 2px 5px 4px #ccc;
+  margin-top: 2rem;
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  // display: none; /*temp*/
+}
+
+@media(max-width:991px) {
+    .ja-content-main .optin-box-success {
+        margin-top: 0;
+        height: auto;
+        width: 80%;
+    }
+}
+
+@media(max-width:600px) {
+    .ja-content-main .optin-box-success {
+        width: 100%;
+    }
+}
+
+.ja-content-main .optin-box-success .blue-box {
+    position: absolute;
+    height: 100px;
+    padding: 14px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 115px;
+    background: #2e86b5
+}
+
+@media(max-width:991px) {
+    .ja-content-main .optin-box-success .blue-box {
+        display: none
+    }
+}
+
+.ja-content-main .optin-box-success .blue-box p {
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic
+}
+
+.ja-content-main .optin-box__image {
+    float: left;
+    margin-right: 3%
+}
+
+@media(max-width:991px) {
+    .ja-content-main .optin-box__image {
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin: 0 auto
+    }
+}
+
+.ja-content-main .optin-box__headline {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-top: 1rem;
+    font-weight: 600;
+    line-height: 130%
+}
+
+@media(max-width:991px) {
+    .ja-content-main .optin-box__headline {
+        text-align: center;
+        margin-bottom: 20px;
+        float: none
+    }
+}
+
+.ja-content-main .optin-box__button {
+    background: #fdb841;
+    background: -moz-linear-gradient(top, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    background: -webkit-linear-gradient(top, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    background: linear-gradient(to bottom, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2', GradientType=0);
+    width: 100%;
+    display: block;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    line-height: 50px;
+    text-decoration: none;
+    clear: both
+}
+
+.ja-content-main .optin-box__button:hover {
+    background: #efa536;
+    background: -moz-linear-gradient(top, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    background: -webkit-linear-gradient(top, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    background: linear-gradient(to bottom, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='$color2', endColorstr='$color1', GradientType=0)
+}
+
+.ja-content-main .popup-optin {
+    display: block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-align: center;
+    color: #3487b3;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%
+}
+
+.ja-content-main .popup-optin .your-progress {
+    font-size: 13px;
+    color: #ccc
+}
+
+.ja-content-main .popup-optin .progress {
+    width: 70%;
+    height: 15px;
+    background-color: #FFF;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: 0;
+    overflow: hidden
+}
+
+.ja-content-main .popup-optin .progress .progress-inner {
+    background-color: #54b042;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border-radius: 6px
+}
+
+.ja-content-main .popup-optin #dialog {
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 100px
+}
+
+@media (max-width: 600px) {
+	.ja-content-main .popup-optin #dialog {
+		top: 20px;
+	}
+}
+
+.ja-content-main .popup-optin #dialog>p {
+    color: #CCC;
+    font-size: .7em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0
+}
+
+.ja-content-main .popup-optin #optin-form-ver-b>p {
+    font: 300 .9em 'Lato', Arial, sans-serif
+}
+
+.ja-content-main .popup-optin #optin-form-ver-b h2.form-header {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 1rem;
+    line-height: 120%
+}
+
+.ja-content-main .popup-optin .form-block {
+    display: none
+}
+
+.ja-content-main .popup-optin .form-block input[type="text"],
+.ja-content-main .popup-optin .form-block input[type="email"] {
+    font: 400 .85em Futura, Lato, Arial, sans-serif;
+    float: none;
+    width: 70%;
+    display: block;
+    border: 0;
+    padding: 18px 10px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000
+}
+
+.ja-content-main .popup-optin .form-block .form-desc {
+    font-size: 1.2em;
+    margin: 10px 0 0 0
+}
+
+.ja-content-main .popup-optin .form-block .button-orange {
+    margin: 10px auto;
+    border: 0;
+    background: #fdb841;
+    background: -moz-linear-gradient(top, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    background: -webkit-linear-gradient(top, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    background: linear-gradient(to bottom, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2', GradientType=0);
+    width: 20%;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    webkit-appearance: none;
+    moz-appearance: none;
+    appearance: none
+}
+
+.ja-content-main .popup-optin .form-block .button-orange:hover {
+    background: #efa536;
+    background: -moz-linear-gradient(top, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    background: -webkit-linear-gradient(top, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    background: linear-gradient(to bottom, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='$color2', endColorstr='$color1', GradientType=0)
+}
+
+.ja-content-main .popup-optin #formblock0.form-block {
+    display: block
+}
+
+.ja-content-main .popup-optin #popupfoot {
+    width: 100%
+}
+
+.ja-content-main .popup-optin #popupfoot .close {
+    text-decoration: underline;
+    color: #ccc;
+    font-size: .7em
+}
+
+.ja-content-main .popup-optin #mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9000;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none
+}
+
+.ja-content-main .form-header {
+    line-height: 28px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #245875;
+    margin-bottom: 15px;
+}
+
+.ja-content-main .parsley-errors-list {
+    margin: 0;
+    padding: 0 0 0px;
+}
+
+.ja-content-main .infusion-field {
+	 max-width: none;
+}
+
+.ja-content-main .infusion-field input {
+	 max-width: none;
+}
+
+.ja-content-main .infusion-field-input-container {
+    height: 50px;
+    margin: 0 auto;
+    width: 75%;
+    display: block;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 300
+}
+
+@media(max-width:600px) {
+    .ja-content-main .infusion-field-input-container {
+        display: block;
+        width: 100%
+    }
+}
+
+.ja-content-main .infusion-submit input[type="submit"] {
+    background: #fdb841;
+    background: -moz-linear-gradient(top, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    background: -webkit-linear-gradient(top, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    background: linear-gradient(to bottom, #fdb841 0, #fdb841 44%, #efa536 56%, #efa536 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2', GradientType=0);
+    padding: 20px;
+    color: #fff;
+    border: 0;
+    width: 50%;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.ja-content-main .infusion-submit input[type="submit"]:hover {
+    background: #efa536;
+    background: -moz-linear-gradient(top, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    background: -webkit-linear-gradient(top, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    background: linear-gradient(to bottom, #efa536 0, #efa536 44%, #fdb841 56%, #fdb841 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='$color2', endColorstr='$color1', GradientType=0)
+}
+
+.ja-content-main .infusion-submit input[type="submit"]:hover {
+    cursor: pointer
+}
+
+@media(max-width:600px) {
+    .ja-content-main .infusion-submit input[type="submit"] {
+        width: 100%
+    }
+}
+
+/*
+End Newsletter Additions and Popup form
+*/
+
+</style>
+
+<div class="ja-content-main clearfix">
+
+<div class="popup-optin">
+<div id="dialog" class="optin-window">
+<form accept-charset="UTF-8" action="https://ctg.infusionsoft.com/app/form/process/b2c04e28fb9a2a59a0a7de58138bf80e" class="infusion-form" id="inf_form_b2c04e28fb9a2a59a0a7de58138bf80e" method="POST"><input name="inf_form_xid" type="hidden" value="b2c04e28fb9a2a59a0a7de58138bf80e"><input name="inf_form_name" type="hidden" value="Newsletter signup (Success TV)"><input name="infusionsoft_version" type="hidden" value="1.70.0.200651">
+<p class="your-progress">Your Progress</p>
+<div class="progress">
+<div class="progress-inner"> </div>
+</div>
+<h2 class="form-header">Subscribe below for Success TV updates <br>and Jack's weekly newsletter:</h2>
+
+<div class="infusion-field"><input id="inf_field_FirstName" class="infusion-field-input-container" name="inf_field_FirstName" required="" type="text" placeholder="Your First Name"></div>
+	<div class="infusion-field"><input id="inf_field_LastName" class="infusion-field-input-container" name="inf_field_LastName" required="" type="text" placeholder="Your Last Name"></div>
+	<div class="infusion-field"><input id="inf_field_Email" class="infusion-field-input-container" name="inf_field_Email" required="" type="email" placeholder="Your Best Email"></div>
+<div class="infusion-submit center-text">
+<div class="infusion-field infusion__field-group infusion__field-checkbox" style="position: relative;">
+                    <input id="inf_option_BycheckingthisboxandsubmittingyourinformationyouareagreeingtoreceivecommunicationswithprogramsandoffersfromCanfieldTrainingGroupYoumayunsubscribeatanytimebyclickingtheUnsubscribelinkinthefooterinanyemailFormoreinformationpleaseseeourPrivacyPolicy" name="inf_option_BycheckingthisboxandsubmittingyourinformationyouareagreeingtoreceivecommunicationswithprogramsandoffersfromCanfieldTrainingGroupYoumayunsubscribeatanytimebyclickingtheUnsubscribelinkinthefooterinanyemailFormoreinformationpleaseseeourPrivacyPolicy" type="checkbox" value="15706" class="__web-inspector-hide-shortcut__ infusion__checkbox" style="float: left; width: auto;" required=""><p class="infusion__checkbox-text" style="float: left; width: 90%; text-align: left; font-size: .9em; line-height: 1.3em; margin-left: 10px;">By checking this box and submitting your information, you are agreeing to receive communications with programs and offers from Canfield Training Group as described in our <a target="__blank" class="infusion__checkbox-link" href="../../privacy-policy/index.htm">Privacy Policy</a>. You may unsubscribe at any time.
+                    </p>
+                    <div class="infusion__gdpr-tooltip" style="display: none; position: absolute; left: 2rem; max-width: 400px; min-width: 305px; width: 75vw; background: white; box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 3px; top: 0px; text-align: left; padding: 1rem; line-height: 1.3;">
+                        <img decoding="async" src="../../media.brandetize.com/assets/js/optin/arrow-up-4-24.png" class="gdpr__tooltip-img" style="position: absolute; left: 1px; transform: rotate(-90deg); top: 0px; opacity: 0.4;">
+                            <h3 class="gdpr__tooltip-title" style="font-size: 1.2rem; font-weight: bold; margin-top: 8px;">Oh No!</h3>
+                            <p>You forgot to check the box agreeing to receive communications from me! I can’t send you the free download without your consent, and I want to keep in touch and help you achieve your personal goals! So check the box to proceed. Or view our <a target="__blank" class="infusion__checkbox-link" href="../../privacy-policy/index.htm">Privacy Policy</a>.</p>
+                            </div>
+                </div>
+<input class="button-form-submit-simple" type="submit" value="Submit"></div>
+</form>
+<div id="popupfoot"><a class="close" href="#">No thanks, I already practice proven success strategies daily.</a></div>
+</div>
+<div id="mask"> </div>
+</div>
+<div class="optin-box-success"><img decoding="async" class="optin-box__image" src="http://media-jackcanfield.s3.amazonaws.com/assets/images/success/op/tsp-2-chapters/jack.png" alt="Jack Canfield">
+<h2 class="optin-box__headline" style="color: white;">Get Notified When New Episodes Are Released! </h2>
+<a class="optin-box__button" href="#">Sign Up Now</a></div>
+</div>
+
+<code class="tve_js_placeholder"><script src="../../media.brandetize.com/assets/js/jquery.2.1.4.min.js"></script></code>
+<code class="tve_js_placeholder"><script>
+  jQuery( document ).ready(function() {
+  jQuery(".optin-box__button").on('click', function(e){
+     console.log('firing');
+      e.preventDefault();
+      if( jQuery(window).width() < 770 ) {
+        jQuery('.popup-optin').addClass("optin-mobile");
+      }
+      else {
+        jQuery('.popup-optin').removeClass("optin-mobile");
+        // For debugging purposes, if optin has been showed on mobile before desktop
+      }
+
+      jQuery(".popup-optin").show();
+      jQuery("#mask").fadeIn();
+      jQuery("#dialog").fadeIn();
+      jQuery(".form-email").focus();
+
+    });
+
+    jQuery('#mask, #popupfoot .close').on('click', function(e){
+      jQuery("#mask").hide();
+      jQuery("#dialog").hide();
+      jQuery(".popup-optin").hide();
+    });
+
+    jQuery(document).bind("keypress", function(a) {
+      if (a.keyCode == 13 ) {
+        jQuery(".button-form-submit-simple").trigger("click");
+      }
+    });
+
+    jQuery(".button-form-submit-simple").on('click', function(){
+      if(jQuery('form').parsley().validate() === true) {
+        jQuery('form').submit();
+      }
+    });
+  });
+</script></code>
+<code class="tve_js_placeholder"><script src="../../assets/js/parsley/parsley.min.js"></script></code></div></div>
+</div><div class="thrv_wrapper thrv_text_element"><p><br></p></div></div>
+</div></div></div><div class="tcb_flag" style="display: none"></div>
+        		</main><!-- #main -->
+	</div><!-- #primary -->
+	<script type="text/javascript">
+	  var lazyCSS = ['https://jackcanfield.com/wp-content/themes/jackcanfield/assets/css/theme/templates/single.min.css'];
+	  var lazyJS = ['https://jackcanfield.com/wp-content/themes/jackcanfield/assets/js/theme/templates/single.min.js'];
+	</script>
+
+<script nitro-exclude="">
+    var heartbeatData = new FormData(); heartbeatData.append('nitroHeartbeat', '1');
+    fetch(location.href, {method: 'POST', body: heartbeatData, credentials: 'omit'});
+</script>
+<script nitro-exclude="">
+    document.cookie = 'nitroCachedPage=' + (!window.NITROPACK_STATE ? '0' : '1') + '; path=/; SameSite=Lax';
+</script>
+</div><!-- #content -->
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="col-row footer-row">
+      <div class="footer__col footer__col--first">
+        <div class="footer-widget footer-widget--links">
+          <h4 class="footer-widget__title">Explore</h4>
+          <ul class="ul-reset">
+                                        <li><a href="../../about-jack-canfield/index.htm" target="_self">About Jack</a></li>
+                                            <li><a href="../../about-jack-canfield/trainer-directory/index.htm" target="_self">Trainer Directory</a></li>
+                                            <li><a href="../../hire-jack/index.htm" target="_self">Hire Jack</a></li>
+                                            <li><a href="../../blog/index.htm" target="_self">Jack's Blog</a></li>
+                                            <li><a href="../../success-strategies-newsletter/index.htm" target="_self">Newsletter</a></li>
+                                            <li><a href="../../store/index.htm" target="_self">Store</a></li>
+                                            <li><a href="https://affiliates.jackcanfield.com/" target="_blank">Affiliate</a></li>
+                                            <li><a href="../success-tv/index.htm" target="_self">Success TV</a></li>
+                                                  </ul>
+        </div>
+      </div><!-- .footer__col -->
+      <div class="footer__col footer__col--second">
+        <div class="footer-widget footer-widget--info">
+          <h4 class="footer-widget__title">Company Info</h4>
+          <p>The Canfield Training Group<br>
+P.O. Box 30880<br>
+Santa Barbara, CA 93130</p>
+<p>Order by Phone: 805-563-2935<br>
+<a style="font-size: 15.4px;text-decoration: underline;font-weight: 600" href="../../about-jack-canfield/contact-us/index.htm">Contact Customer Support</a></p>
+        </div>
+      </div><!-- .footer__col -->
+      <div class="footer__col  footer__col--third">
+        <div class="footer-widget footer-widget--search">
+          <h4 class="footer-widget__title">Search</h4>
+          <div class="footer-widget__form">
+            <form role="search" method="get" class="search-form" action="https://jackcanfield.com/">
+              <div class="footer-widget__form-group">
+                <button type="submit" class="search-submit footer-widget__form-search"><i class='fas fa-search'></i></button>
+                <input type="search" class="search-field footer-widget__form-field" placeholder="Press enter to search" alue="" name="s" title="Search for:">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-widget footer-widget--social">
+          <h4 class="footer-widget__title">Social Media</h4>
+          <ul class="ul-reset ul-inline footer-widget__social-list">
+                                        <li class="footer-widget__social-list-item rss">
+                  <a class="footer-widget__social-list-link" href="https://jackcanfield.com/feed" target="_blank"></a>
+                </li>
+                            <li class="footer-widget__social-list-item facebook">
+                  <a class="footer-widget__social-list-link" href="https://www.facebook.com/JackCanfieldFan/" target="_blank"></a>
+                </li>
+                            <li class="footer-widget__social-list-item twitter">
+                  <a class="footer-widget__social-list-link" href="https://twitter.com/JackCanfield" target="_blank"></a>
+                </li>
+                            <li class="footer-widget__social-list-item youtube">
+                  <a class="footer-widget__social-list-link" href="https://goo.gl/Gz86aY" target="_blank"></a>
+                </li>
+                            <li class="footer-widget__social-list-item instagram">
+                  <a class="footer-widget__social-list-link" href="https://www.instagram.com/jackcanfield_official/" target="_blank"></a>
+                </li>
+                            <li class="footer-widget__social-list-item linkedin">
+                  <a class="footer-widget__social-list-link" href="https://linkedin.com/" target="_blank"></a>
+                </li>
+                                  </ul>
+        </div>
+      </div><!-- .footer__col -->
+    </div>
+    <div class="footer__meta">
+      <p>Copyright © 2024 Self Esteem Seminars, L.P. All rights reserved.</p>
+<p>Jack Canfield is a registered trademark of Self Esteem Seminars, L.P. The Success Principles is the common law trademark of Self Esteem Seminars, L.P.</p>
+<p><a href="../../privacy-policy/index.htm">Privacy Policy</a> | <a href="../../about-jack-canfield/contact-us/index.htm">Contact Us</a> | <a href="../../about-jack-canfield/index.htm">About</a></p>
+    </div>
+  </div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript'>( $ => {
+	/**
+	 * Displays toast message from storage, it is used when the user is redirected after login
+	 */
+	if ( window.sessionStorage ) {
+		$( window ).on( 'tcb_after_dom_ready', () => {
+			const message = sessionStorage.getItem( 'tcb_toast_message' );
+
+			if ( message ) {
+				tcbToast( sessionStorage.getItem( 'tcb_toast_message' ), false );
+				sessionStorage.removeItem( 'tcb_toast_message' );
+			}
+		} );
+	}
+
+	/**
+	 * Displays toast message
+	 *
+	 * @param {string}   message  - message to display
+	 * @param {Boolean}  error    - whether the message is an error or not
+	 * @param {Function} callback - callback function to be called after the message is closed
+	 */
+	function tcbToast( message, error, callback ) {
+		/* Also allow "message" objects */
+		if ( typeof message !== 'string' ) {
+			message = message.message || message.error || message.success;
+		}
+		if ( ! error ) {
+			error = false;
+		}
+		TCB_Front.notificationElement.toggle( message, error ? 'error' : 'success', callback );
+	}
+} )( typeof ThriveGlobal === 'undefined' ? jQuery : ThriveGlobal.$j );
+</script><style type="text/css" id="tve_notification_styles"></style>
+<div class="tvd-toast tve-fe-message" style="display: none">
+	<div class="tve-toast-message tve-success-message">
+		<div class="tve-toast-icon-container">
+			<span class="tve_tick thrv-svg-icon"></span>
+		</div>
+		<div class="tve-toast-message-container"></div>
+	</div>
+</div><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Inventory Blowout Fall 2024 -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,69612,'i0cu8jqefsaztnbh2u9b');</script>
+<!-- / OptinMonster --><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Exit 10-Day Opt in Repitch 2024 -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,69612,'yfkla8n1don7f0wm8qnp');</script>
+<!-- / OptinMonster --><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: 10-Day Transformation | Jc.com Exit -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,69612,'cgpkb83zgatp43mmpxno');</script>
+<!-- / OptinMonster --><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Law of attraction pop up -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,69612,'u2kzzkasel0yovpsoeqq');</script>
+<!-- / OptinMonster --><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Vision Board exit pop -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,69612,'ztxpk41zdnomoxkg7fam');</script>
+<!-- / OptinMonster -->		<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3S6XFB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
+				<script type="text/javascript">
+		var i0cu8jqefsaztnbh2u9b_shortcode = true;var yfkla8n1don7f0wm8qnp_shortcode = true;var cgpkb83zgatp43mmpxno_shortcode = true;var u2kzzkasel0yovpsoeqq_shortcode = true;var ztxpk41zdnomoxkg7fam_shortcode = true;		</script>
+		<script type="text/javascript" src="../../wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/video.min.js?v=10.3" id="tve_frontend_video-js"></script>
+<script type="text/javascript" src="../../ajax/libs/jquery/3.3.1/jquery.min.js" id="jc-jquery-js"></script>
+<script type="text/javascript" src="../../ajax/libs/parsley.js/2.8.1/parsley.min.js" id="jc-parsley-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/jackcanfield/assets/js/global/navigation.min.js" id="jc-navigation-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/jackcanfield/assets/js/global/skip-link-focus-fix.min.js" id="jc-skip-link-focus-fix-js"></script>
+<script type="text/javascript" id="tve-dash-frontend-js-extra">
+/* <![CDATA[ */
+var tve_dash_front = {"ajaxurl":"https:\/\/jackcanfield.com\/wp-admin\/admin-ajax.php","force_ajax_send":"","is_crawler":"","recaptcha":[],"turnstile":[],"post_id":"29727"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/thrive-visual-editor/thrive-dashboard/js/dist/frontend.min.js" id="tve-dash-frontend-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-3d6495dceaebc28bcca3.js" id="googlesitekit-consent-mode-js"></script>
+<script>(function(d){var s=d.createElement("script");s.type="text/javascript";s.src="https://a.omappapi.com/app/js/api.min.js";s.async=true;s.id="omapi-script";d.getElementsByTagName("head")[0].appendChild(s);})(document);</script><script type="text/javascript" id="wp-consent-api-js-extra">
+/* <![CDATA[ */
+var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiration":"30","cookie_prefix":"wp_consent"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/wp-consent-api/assets/js/wp-consent-api.min.js" id="wp-consent-api-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/optinmonster/assets/dist/js/helper.min.js" id="optinmonster-wp-helper-js"></script>
+<script type="text/javascript">var tcb_current_post_lists=JSON.parse('[]'); var tcb_post_lists=tcb_post_lists?[...tcb_post_lists,...tcb_current_post_lists]:tcb_current_post_lists;</script>		<script type="text/javascript">var omapi_localized = {
+			ajax: 'https://jackcanfield.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1',
+			nonce: 'a378f3acb3',
+			slugs:
+			{"i0cu8jqefsaztnbh2u9b":{"slug":"i0cu8jqefsaztnbh2u9b","mailpoet":false},"yfkla8n1don7f0wm8qnp":{"slug":"yfkla8n1don7f0wm8qnp","mailpoet":false},"cgpkb83zgatp43mmpxno":{"slug":"cgpkb83zgatp43mmpxno","mailpoet":false},"u2kzzkasel0yovpsoeqq":{"slug":"u2kzzkasel0yovpsoeqq","mailpoet":false},"ztxpk41zdnomoxkg7fam":{"slug":"ztxpk41zdnomoxkg7fam","mailpoet":false}}		};</script>
+				<script type="text/javascript">var omapi_data = {"object_id":29727,"object_key":"custom_thrive_page","object_type":"post","term_ids":[],"wp_json":"https:\/\/jackcanfield.com\/wp-json","wc_active":false,"edd_active":false,"nonce":"6d36fe20e2"};</script>
+		
+
+<!-- Lazy imges get loaded always. -->
+<script type="text/javascript" src="../../wp-content/themes/jackcanfield/assets/js/global/lazyload-img.min.js"></script>
+
+</body>
+
+</html>

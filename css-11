@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sen/v9/6xK0dSxYI9_dkN18-vZKK2EISCq5L4nAkA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sen/v9/6xK0dSxYI9_dkN18-vZKK2EISM2-L4nAkA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/sen/v9/6xK0dSxYI9_dkN18-vZKK2EISKq-L4nAkA.ttf) format('truetype');
+}
