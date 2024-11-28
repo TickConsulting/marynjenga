@@ -1,6 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      #cursor {
+        animation: blink 0.7s steps(2) infinite;
+      }
+    
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      .service-icon {
+      font-size: 50px;
+      color: #007bff;
+    }
+    .service-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .service-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .service-description {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    </style>
+    
     <script>
       if (
         navigator.userAgent.match(/MSIE|Internet Explorer/i) ||
@@ -24,6 +64,8 @@
         }
       }
     </script>
+    
+    
     <link rel="preconnect" href="index-1.htm" />
     <link rel="preconnect" href="https://www.google.com" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -5186,10 +5228,10 @@
                     id="menu-item-2233"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2233"
                   >
-                    <a href="about-jack-canfield/index.htm" class="nitro-lazy"
-                      >About</a
+                    <a href="/index.htm" class="nitro-lazy"
+                      >Home</a
                     >
-                    <ul class="sub-menu">
+                    <!-- <ul class="sub-menu">
                       <li
                         id="menu-item-2234"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2234"
@@ -5223,27 +5265,27 @@
                           >Contact Us</a
                         >
                       </li>
-                    </ul>
+                    </ul> -->
                   </li>
-                  <li
+                  <!-- <li
                     id="menu-item-2237"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2237"
                   >
                     <a href="coaching/index.htm">Coaching</a>
-                  </li>
+                  </li> -->
                   <li
                     id="menu-item-2249"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2249"
                   >
-                    <a href="hire-jack/index.htm">Hire Mary</a>
+                    <a href="#hire_mary">Hire Mary</a>
                   </li>
                   <li
                     id="menu-item-32317"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32317"
                   >
-                    <a href="trainings/index.htm">Trainings</a>
+                    <a href="#trainings">Trainings</a>
                   </li>
-                  <li
+                  <!-- <li
                     id="menu-item-2251"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251"
                   >
@@ -5254,7 +5296,7 @@
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2403"
                   >
                     <a href="success-resources/index.htm">Resources</a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             
@@ -5277,12 +5319,17 @@
           <img
           id="video-test-a"
           class="front-page-banner-video"
+          style=" width: 100%;  /* Match the container's width */
+          height: auto; /* Maintain aspect ratio */
+          object-fit: cover; /* Ensure it covers the container */
+          display: block; /* Remove any inline spacing */
+          position: relative;"
           nitro-lazy-src="/wp-content/uploads/2019/09/27103422/background.png"
           decoding="async"
           src="/wp-content/uploads/2019/09/27103422/background.png"
         />
         
-          <!-- <video
+           <!-- <video
             id="video-test-a"
             class="front-page-banner-video"
             loop=""
@@ -5301,25 +5348,32 @@
               src="assets/wp/temp/jc_cam_flash_v04.mp4"
               type="video/mp4"
             />
-          </video> -->
+          </video>  -->
           <div class="container">
             <div class="front-page-banner__content">
               <h1 class="front-page-banner__headline" style="color: #fff">
-                Transform Your Mindset <br class="hide-mob" /><strong
-                  >Been Dreaming Of</strong
+                Transformational Coaching  <br class="hide-mob" /><strong
+                  >With Impact</strong
                 >
               </h1>
-              <h2 class="front-page-banner__subline" style="color: #fff">
+              <!-- <h2 class="front-page-banner__subline" style="color: #fff">
                 <strong
-                  >Get from where you are, to where you want to be
+                  >Transform Your Mindset, Live Life, 
                   <br class="hide-mob" />
-                  using a proven system of success</strong
+                  and Build Powerful Relationships</strong
                 >
+              </h2> -->
+              <h2 class="front-page-banner__subline" style="color: #fff">
+                <strong>
+                  <span id="typed-text"></span>
+                  <span id="cursor" style="border-left: 2px solid #fff; display: inline-block; width: 10px; margin-left: 2px;"></span>
+                </strong>
               </h2>
+              
               <a
-                href="success-resources/index.htm"
+                href="#welcome"
                 class="btn btn--pill btn--gradient front-page-banner__btn"
-                >Start Here</a
+                >Welcome to Emerald Coaching </a
               >
             </div>
           </div>
@@ -5471,15 +5525,15 @@
             </div>
           </div>
         </section>
-        <section class="content-section ready-transformation">
+        <section class="content-section ready-transformation" id="welcome">
           <div class="container">
             <h2 class="content-section__headline text-center">
-              Ready for Your <strong>Transformation?</strong>
+              Welcome to Emerald Coaching <strong>Transformation?</strong>
             </h2>
             <p class="text-center">
-              These 3 powerful resources will help you tackle daily challenges,
-              <br class="hide-mob" />maximize your potential, and create the
-              life you truly desire.
+              Unlock your full potential both professionally and personally.<br>
+               At Emerald Coaching, we empower individuals and organizations to break through barriers, achieve meaningful goals, and create lasting success.
+              <br class="hide-mob" />
             </p>
             <div class="blog-cards">
               <div class="col-row content-section__row blog-cards__row">
@@ -5595,187 +5649,94 @@
         <section class="content-section how-it-works content-section--light">
           <div class="container">
             <h2 class="content-section__headline text-center">
-              <strong>Start Your Journey</strong>
+              <strong>What I Offer:</strong>
             </h2>
-            <h3 class="text-center"><strong>How it Works</strong></h3>
-            <div class="steps">
-              <div class="col-row content-section__row steps__row">
-                <div class="col col--halfs steps__col">
-                  <article class="steps__item">
-                    <div class="steps__icon">
-                      <img
-                        alt=""
-                        nitro-lazy-src="https://cdn-fjlpd.nitrocdn.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ/assets/images/optimized/rev-0acabf6/webserver-assets-jackcanfield.s3.amazonaws.com/wp-content/uploads/2019/08/22010606/icon-summit.png"
-                        class="nitro-lazy"
-                        decoding="async"
-                        nitro-lazy-empty=""
-                        id="NDIyOjE0NA==-1"
-                        src="data:image/svg+xml;nitro-empty-id=NDIyOjE0NA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUyIDE1MiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                      />
+             
+            <div class="services">
+              <div class="col-row content-section__row services__row">
+                
+                <!-- Service 1: Corporate Coaching -->
+                <div class="col col--halfs services__col">
+                  <article class="services__item">
+                    <div class="services__icon">
+                       
                     </div>
-                    <div class="steps__content">
-                      <h4 class="steps__subline"><b>STEP 1:</b></h4>
-                      <h3 class="steps__headline">
-                        Learn the <strong>Success Principles</strong>
-                      </h3>
-                      <p class="steps__text">
-                        These 67 Principles of Success will get you from where
-                        you are to where you want to be
+                    <div class="services__content">
+                      <h4 class="services__subline"><b>1. Corporate Coaching:</b></h4>
+                      <p class="services__text">
+                        Customised coaching for leaders, junior leaders, and teams to enhance performance, communication, and organizational growth.
                       </p>
-                      <a
-                        href="success/op/tsp-2-chapters.html"
-                        class="btn btn--pill btn--fill btn--primary steps__btn"
-                        target="_blank"
-                        >Get the First 2 Chapters FREE</a
-                      >
                     </div>
                   </article>
                 </div>
-                <div class="col col--halfs steps__col">
-                  <article class="steps__item">
-                    <div class="steps__icon">
-                      <img
-                        nitro-lazy-src="https://cdn-fjlpd.nitrocdn.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ/assets/images/optimized/rev-0acabf6/webserver-assets-jackcanfield.s3.amazonaws.com/wp-content/uploads/2019/08/22010608/icon-checklist.png"
-                        class="nitro-lazy"
-                        decoding="async"
-                        nitro-lazy-empty=""
-                        id="NDM1OjE0MA==-1"
-                        src="data:image/svg+xml;nitro-empty-id=NDM1OjE0MA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUyIDE1MiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                      />
+            
+                <!-- Service 2: Leadership Development -->
+                <div class="col col--halfs services__col">
+                  <article class="services__item">
+                    <div class="services__icon">
+                      
                     </div>
-                    <div class="steps__content">
-                      <h4 class="steps__subline"><b>STEP 2:</b></h4>
-                      <h3 class="steps__headline">
-                        Program Your Mind <strong>for Success </strong>
-                      </h3>
-                      <p class="steps__text">
-                        Discover how to reprogram the mind through positive,
-                        powerful affirmations
+                    <div class="services__content">
+                      <h4 class="services__subline"><b>2. Leadership Development:</b></h4>
+                      <p class="services__text">
+                        Helping you to cultivate the mindset, skills, and strategies needed to lead with clarity and influence.
                       </p>
-                      <a
-                        href="success/op/affirmations-for-success.html"
-                        class="btn btn--pill btn--fill btn--primary steps__btn"
-                        target="_blank"
-                        >Think Positively</a
-                      >
                     </div>
                   </article>
                 </div>
-                <div class="col col--halfs steps__col">
-                  <article class="steps__item">
-                    <div class="steps__icon">
-                      <img
-                        nitro-lazy-src="https://cdn-fjlpd.nitrocdn.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ/assets/images/optimized/rev-0acabf6/webserver-assets-jackcanfield.s3.amazonaws.com/wp-content/uploads/2019/08/22010615/icon-growth.png"
-                        class="nitro-lazy"
-                        decoding="async"
-                        nitro-lazy-empty=""
-                        id="NDQ4OjEzNw==-1"
-                        src="data:image/svg+xml;nitro-empty-id=NDQ4OjEzNw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUyIDE1MiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                      />
+            
+                <!-- Service 3: Life Coaching -->
+                <div class="col col--halfs services__col">
+                  <article class="services__item">
+                    <div class="services__icon">
+                       
                     </div>
-                    <div class="steps__content">
-                      <h4 class="steps__subline"><b>STEP 3:</b></h4>
-                      <h3 class="steps__headline">
-                        Watch The <strong>Success Formula Webcast</strong>
-                      </h3>
-                      <p class="steps__text">
-                        This free webcast will show you Jack's 3-step process to
-                        get better results no matter what
+                    <div class="services__content">
+                      <h4 class="services__subline"><b>3. Life Coaching:</b></h4>
+                      <p class="services__text">
+                        Guiding individuals to define what success means on a personal level and supporting you to live a life of purpose, fulfilment, and joy.
                       </p>
-                      <a
-                        href="success/breakthrough-to-success-online/op/registration.html"
-                        class="btn btn--pill btn--fill btn--primary steps__btn"
-                        target="_blank"
-                        >Begin Your Breakthrough</a
-                      >
                     </div>
                   </article>
                 </div>
-                <div class="col col--halfs steps__col">
-                  <article class="steps__item">
-                    <div class="steps__icon">
-                      <img
-                        nitro-lazy-src="https://cdn-fjlpd.nitrocdn.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ/assets/images/optimized/rev-0acabf6/webserver-assets-jackcanfield.s3.amazonaws.com/wp-content/uploads/2019/08/22010613/icon-communication.png"
-                        class="nitro-lazy"
-                        decoding="async"
-                        nitro-lazy-empty=""
-                        id="NDYxOjE0NA==-1"
-                        src="data:image/svg+xml;nitro-empty-id=NDYxOjE0NA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUyIDE1MiIgd2lkdGg9IjE1MiIgaGVpZ2h0PSIxNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                      />
+            
+                <!-- Service 4: Executive Coaching -->
+                <div class="col col--halfs services__col">
+                  <article class="services__item">
+                    <div class="services__icon">
+                       
                     </div>
-                    <div class="steps__content">
-                      <h4 class="steps__subline"><b>STEP 4:</b></h4>
-                      <h3 class="steps__headline">
-                        Work with Us <strong> Live</strong>
-                      </h3>
-                      <p class="steps__text">
-                        Join one of our trainings for maximum transformation and
-                        lasting change
+                    <div class="services__content">
+                      <h4 class="services__subline"><b>4. Executive Coaching:</b></h4>
+                      <p class="services__text">
+                        One-on-One coaching to unlock your leadership potential and optimize your professional path.
                       </p>
-                      <a
-                        href="event-calendar/index.htm"
-                        class="btn btn--pill btn--fill btn--primary steps__btn"
-                        target="_self"
-                        >View Event Calendar</a
-                      >
                     </div>
                   </article>
                 </div>
+            
+                <!-- Service 5: Work-Life Balance -->
+                <div class="col col--halfs services__col">
+                  <article class="services__item">
+                    <div class="services__icon">
+                       
+                    </div>
+                    <div class="services__content">
+                      <h4 class="services__subline"><b>5.Work-Life Balance:</b></h4>
+                      <p class="services__text">
+                        Techniques and strategies to find harmony between career demands and personal life.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+            
               </div>
             </div>
+            
           </div>
         </section>
-        <section class="content-section sandbox">
-          <div class="container">
-            <p class="sandbox--text">
-              As the beloved co-creator of <em>Chicken Soup for the Soul</em>,
-              Jack is dedicated to helping you reach success and regularly
-              publishes actionable content on topics, including the
-              <a
-                href="blog/using-the-law-of-attraction/index.htm"
-                target="_blank"
-                rel="noopener"
-                >law of attraction</a
-              >
-              and
-              <a
-                href="blog/visualization-techniques-manifest-your-dreams/index.htm"
-                target="_blank"
-                rel="noopener"
-                >visualization</a
-              >
-              techniques to help you
-              <a
-                href="blog/goal-setting/index.htm"
-                target="_blank"
-                rel="noopener"
-                >achieve your goals</a
-              >
-              quickly. He’ll also help you find your inspiration and keep a
-              positive mindset with actionable tips for using
-              <a
-                href="blog/vision-board/index.htm"
-                target="_blank"
-                rel="noopener"
-                >vision boards</a
-              >,
-              <a
-                href="blog/daily-affirmations/index.htm"
-                target="_blank"
-                rel="noopener"
-                >daily affirmations</a
-              >, and
-              <a
-                href="blog/how-to-meditate/index.htm"
-                target="_blank"
-                rel="noopener"
-                >meditation techniques</a
-              >
-              to stay focused and uplifted in life.
-            </p>
-          </div>
-        </section>
-        <section class="content-section meet-jack-canfield">
+        
+        <section id="hire_mary"class="content-section meet-jack-canfield">
           <div class="container">
             <h2 class="content-section__headline text-center">
               Meet <strong>Mary Njenga</strong>
@@ -5803,189 +5764,72 @@
                 </h3>
                 <div class="stacked__text">
                   <p>
-                    I have been privileged to work with an international
-                    financial institution for more than 15 years. Most of us who
-                    have been in a corporate environment can relate to the
-                    intense experiences, challenges, pressures, politics and
-                    victories that come with this opportunity. .
+                    I'm Mary Njenga,a corporate and life coach with over 10 years of experience helping leaders,entrepreneurs,graduate trainees, and high-achieving professionals reach their full potential.
+                    My approach blends proven coaching techniques with a deep understanding of human behaviour, organizational dynamics, and personal development. 
+                    
                   </p>
                   <p>
-                    It is in this corporate environment that I discovered my
-                    passion was transformational leadership, helping others
-                    achieve their goals and live their best lives! Nothing
-                    excites me more than seeing my clients thrive in a whole
-                    rounded manner, because I believe that is the life that God
-                    intended for us to live from the creation of the world.
+                      I've worked with clients across industries- from startups to established corporations-empowering them to overcome challenges, build resilience, and develop strategies for success.
+                      However, beyond professional achievement, I believe in nurturing a holistic approach that integrates well-being, fulfilment, and personal growth.
+
                   </p>
-                  <a
-                    class="stacked__text--btn"
-                    href="about-jack-canfield/index.htm"
-                    target="_self"
-                    >Read More About Mary</a
-                  >
+                  <p>
+                      I will impose no identities upon you but will invite you to become yourself without shame or fear.
+                      I reiterate that I will hold a safe space for you in the world and allow your right to fill it with an authentic vocation and purpose. 
+
+                  </p>
+                  <blockquote>
+                    <p><small>In the words of Theodore Roszak: "For as long as your search takes, you have my loyalty."</small>
+                      
+                    </p>
+                  </blockquote>
                 </div>
               </div>
             </article>
           </div>
         </section>
-        <section
-          class="content-section work-with-jack-live content-section--light"
-        >
-          <div class="container">
-            <h2 class="content-section__headline text-center">
-              <strong>Here's What's Happening this Month:</strong>
-            </h2>
-            <p class="text-center">Get the latest from Mary Njenga</p>
-            <article class="content-img-slider">
-              <div class="content-img-slider__slides">
-                <div class="col-row content-img-slider__row">
-                  <div class="col col--halfs content-img-slider__col">
-                    <div class="content-img-slider__images">
-                      <ul class="ul-reset">
-                        <li
-                          style="
-                            background-image: url('data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');
-                          "
-                          class="content-img-slider__images-item nitro-lazy"
-                          nitro-lazy-bg="/wp-content/uploads/2019/09/27103422/marynjenga2.jpg"
-                        ></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col col--halfs content-img-slider__col">
-                    <div class="content-img-slider__content">
-                      <h3 class="content-img-slider__headline">
-                        New: The Mary Njenga Podcast
-                      </h3>
-                      <h4 class="content-img-slider__subline">
-                        Spreading Ideas and Inspiration for Your Success
-                      </h4>
-                      <p class="content-img-slider__text">
-                        Join legendary self-esteem expert and NY-Times
-                        bestselling author Mary Njenga and his inspiring guests
-                        as they explore the simple, time-proven strategies that
-                        anyone can use to overcome limited thinking and
-                        behaviors' and unlock their capacity for success.
-                      </p>
-                      <p class="content-img-slider__text">
-                        <a
-                          href="pages/jack-canfield-podcast/index.htm"
-                          class="btn btn--pill btn--fill btn--primary"
-                          target="_self"
-                          >Listen Now</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-row content-img-slider__row">
-                  <div class="col col--halfs content-img-slider__col">
-                    <div class="content-img-slider__images">
-                      <ul class="ul-reset">
-                        <li
-                          style="
-                            background-image: url('data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');
-                          "
-                          class="content-img-slider__images-item nitro-lazy"
-                          nitro-lazy-bg="/wp-content/uploads/2019/09/27103422/marynjenga2.jpg"
-                        ></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col col--halfs content-img-slider__col">
-                    <div class="content-img-slider__content">
-                      <h3 class="content-img-slider__headline">
-                        Soul of Success: The Mary Njenga Documentary
-                      </h3>
-                      <h4 class="content-img-slider__subline"></h4>
-                      <p class="content-img-slider__text">
-                        <span style="font-weight: 400"
-                          >If you’ve ever thought, “Who the heck is Mary
-                          Njenga?” – or wondered how I was able to escape a
-                          childhood of poverty and abuse and go from being an
-                          inner-city high school teacher to “America’s #1
-                          success coach,” living my life purpose and
-                          transforming tens of thousands of lives around the
-                          world by teaching others how to do the same – here’s
-                          your chance to find out!
-                        </span>
-                      </p>
-                      <p class="content-img-slider__text">
-                        <a
-                          href="pages/soul-of-success-registration-2024/index.htm"
-                          class="btn btn--pill btn--fill btn--primary"
-                          target="_blank"
-                          >Learn More</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-row content-img-slider__row">
-                  <div class="col col--halfs content-img-slider__col">
-                    <div class="content-img-slider__images">
-                      <ul class="ul-reset">
-                        <li
-                          style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');
-                          "
-                          class="content-img-slider__images-item nitro-lazy"
-                          nitro-lazy-bg="/wp-content/uploads/2019/09/27103422/marynjenga5.jpg"
-                        ></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col col--halfs content-img-slider__col">
-                    <div class="content-img-slider__content">
-                      <h3 class="content-img-slider__headline">
-                        Become a Certified Success Principles Trainer
-                      </h3>
-                      <h4 class="content-img-slider__subline"></h4>
-                      <p class="content-img-slider__text">
-                        <span style="font-weight: 400"
-                          >This online training is self-paced and self-taught –
-                          so you can do it ANYWHERE and at ANY TIME!&nbsp;
-                          Designed for a broad array of students from coaches,
-                          trainers, and speakers, to authors, small business
-                          owners, and people that want to use The Success
-                          Principles to unlock their potential and help others
-                          realize their dreams!&nbsp;&nbsp;</span
-                        >
-                      </p>
-                      <p class="content-img-slider__text">
-                        <a
-                          href="pages/success-principles-online-certification-training/index.htm"
-                          class="btn btn--pill btn--fill btn--primary"
-                          target="_blank"
-                          >Discover How</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content-img-slider__controller">
-                <div class="content-img-slider__next">
-                  <img
-                    alt=""
-                    nitro-lazy-src="https://cdn-fjlpd.nitrocdn.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ/assets/images/optimized/rev-0acabf6/media-jackcanfield.s3.amazonaws.com/assets/wp/common/icon-gradient-arrow-next.png"
-                    class="nitro-lazy"
-                    decoding="async"
-                    nitro-lazy-empty=""
-                    id="NTYyOjE1OQ==-1"
-                    src="data:image/svg+xml;nitro-empty-id=NTYyOjE1OQ==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODQgODQiIHdpZHRoPSI4NCIgaGVpZ2h0PSI4NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4="
-                  />
-                </div>
-                <ul class="content-img-slider__dots"></ul>
-              </div>
-            </article>
-          </div>
-        </section>
-        <section
+         
+        <section id="trainings"
           class="content-section content content-padding-bottom-none carousel-section"
         >
           <article class="carousel">
             <div class="carousel__images">
-              <div class="carousel__content">
+              <div class="container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="/wp-content/uploads/2019/09/27103422/lesson.jpg" alt="Los Angeles" style="width:100%;">
+                    </div>
+              
+                    <div class="item">
+                      <img src="/wp-content/uploads/2019/09/27103422/lesson2.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+                  
+                    <div class="item">
+                      <img src="/wp-content/uploads/2019/09/27103422/lesson2.jpg" alt="New york" style="width:100%;">
+                    </div>
+                  </div>
+              
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="carousel__content">
                 <img
                   nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
                   class="nitro-lazy"
@@ -5995,36 +5839,18 @@
                   src="data:image/svg+xml;nitro-empty-id=NTczOjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
                 />
               </div>
-              <div class="carousel__content">
+              
+             <div class="carousel__content">
                 <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NTc2OjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NTc2OjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NTc5OjEzMw==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NTc5OjEzMw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <!-- <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
+                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson2.jpg"
                   class="nitro-lazy"
                   decoding="async"
                   nitro-lazy-empty=""
                   id="NTgyOjEyMw==-1"
                   src="data:image/svg+xml;nitro-empty-id=NTgyOjEyMw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
                 />
-              </div>
+              </div> -->
+                <!--
               <div class="carousel__content">
                 <img
                   nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
@@ -6055,196 +5881,8 @@
                   src="data:image/svg+xml;nitro-empty-id=NTkxOjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
                 />
               </div> -->
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NTk0OjEzMg==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NTk0OjEzMg==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NTk3OjEzMw==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NTk3OjEzMw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjAwOjEyNg==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjAwOjEyNg==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjAzOjEyMw==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjAzOjEyMw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjA2OjEyMw==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjA2OjEyMw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjA5OjEyMw==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjA5OjEyMw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjEyOjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjEyOjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjE1OjEyMw==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjE1OjEyMw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="https://cdn-fjlpd.nitrocdn.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ/assets/images/optimized/rev-0acabf6/webserver-assets-jackcanfield.s3.amazonaws.com/wp-content/uploads/2019/09/27101613/7.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjE4OjEyMw==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjE4OjEyMw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjIxOjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjIxOjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjI0OjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjI0OjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjI3OjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjI3OjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjMwOjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjMwOjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjMzOjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjMzOjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjM2OjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjM2OjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTY4MCAxMTIwIiB3aWR0aD0iMTY4MCIgaGVpZ2h0PSIxMTIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=="
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjM5OjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjM5OjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjQyOjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjQyOjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjQ1OjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjQ1OjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
-              <div class="carousel__content">
-                <img
-                  nitro-lazy-src="/wp-content/uploads/2019/09/27103422/lesson.jpg"
-                  class="nitro-lazy"
-                  decoding="async"
-                  nitro-lazy-empty=""
-                  id="NjQ4OjEyNA==-1"
-                  src="data:image/svg+xml;nitro-empty-id=NjQ4OjEyNA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjAwIDQwMCIgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-                />
-              </div>
+             
+             
             </div>
           </article>
         </section>
@@ -6546,7 +6184,7 @@
                     >
                   </li>
                   <li>
-                    <a href="hire-jack/index.htm" target="_self">Hire Mary</a>
+                    <a href="#hire_mary" target="_self">Hire Mary</a>
                   </li>
                   <li>
                     <a href="blog/index.htm" target="_self">Mary's Blog</a>
@@ -8578,3 +8216,43 @@
     </script>
   </body>
 </html>
+<script>
+      const texts = [
+      "Elevate your leadership",
+      "Navigate career transitions",
+      "Work and life balance",
+      "Thriving in a corporate environment",
+      "Building relationships and sustaining them",
+      "Move past the obstacles and become the best version of yourself."
+    ];
+      const typedTextElement = document.getElementById("typed-text");
+      let textIndex = 0;
+      let charIndex = 0;
+      const typingSpeed = 200; // Speed of typing each character (ms)
+      const delayBetweenTexts = 0; // Pause between texts (ms)
+    
+      function typeText() {
+        if (charIndex < texts[textIndex].length) {
+          typedTextElement.textContent += texts[textIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(typeText, typingSpeed);
+        } else {
+          // Pause before deleting text
+          setTimeout(deleteText, delayBetweenTexts);
+        }
+      }
+    
+      function deleteText() {
+        if (charIndex > 0) {
+          typedTextElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+          charIndex--;
+          setTimeout(deleteText, typingSpeed);
+        } else {
+          // Move to the next text
+          textIndex = (textIndex + 1) % texts.length;
+          setTimeout(typeText, typingSpeed);
+        }
+      }
+      // Start the typing effect
+      typeText();
+    </script>
