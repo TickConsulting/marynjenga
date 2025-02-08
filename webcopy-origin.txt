@@ -22,8 +22,8 @@ Uri: https://cdn-fjlpd.nitrocdn.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ/assets/imag
 File Name: C:\Downloaded Web Sites\jackcanfield.com\qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ\assets\images\optimized\rev-0acabf6\jackcanfield.com\wp-content\plugins\thrive-visual-editor\editor\css\images\featured_image.png
 Content Type: image/png
 
-Uri: /wp-content/uploads/2019/02/logo-jackcanfield.png
-File Name: C:\Downloaded Web Sites\jackcanfield.com\qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ\assets\images\optimized\rev-0acabf6\jackcanfield.com\wp-content\uploads\2019\02\logo-jackcanfield.png
+Uri: /wp-content/uploads/2019/02/logo-jackcanfield.jpg
+File Name: C:\Downloaded Web Sites\jackcanfield.com\qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ\assets\images\optimized\rev-0acabf6\jackcanfield.com\wp-content\uploads\2019\02\logo-jackcanfield.jpg
 Content Type: image/png
 
 Uri: https://cdn-fjlpd.nitrocdn.com/qNLDYhMdoYzQyKYAhBzBEJiGniyfTRXZ/assets/images/optimized/rev-0acabf6/jackcanfield.com/wp-content/uploads/2019/08/AladdinFactor-1.jpg
@@ -1582,8 +1582,8 @@ Uri: https://jackcanfield.com/wp-content/themes/jackcanfield/assets/js/global/sk
 File Name: C:\Downloaded Web Sites\jackcanfield.com\wp-content\themes\jackcanfield\assets\js\global\skip-link-focus-fix.min.js
 Content Type: application/javascript
 
-Uri: /wp-content/uploads/2019/02/logo-jackcanfield.png
-File Name: C:\Downloaded Web Sites\jackcanfield.com\wp-content\uploads\2019\02\logo-jackcanfield.png
+Uri: /wp-content/uploads/2019/02/logo-jackcanfield.jpg
+File Name: C:\Downloaded Web Sites\jackcanfield.com\wp-content\uploads\2019\02\logo-jackcanfield.jpg
 Content Type: image/png
 
 Uri: https://jackcanfield.com/wp-content/uploads/2022/06/bootamp-speaker.jpg
